@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-      <div className="mb-2 flex flex-wrap content-center rounded-lg bg-blue-200 shadow-lg">
+      <div className="mb-2 flex h-screen flex-wrap content-center rounded-lg bg-blue-200 shadow-lg">
         <p className="mx-auto w-1/2 justify-center text-xl font-semibold md:text-5xl">
           Hello{' '}
           <span role="img" aria-label="waving hand">
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="heropattern-topography-blue-500 mb-2 grid h-screen grid-cols-1 rounded-lg pb-2 shadow-lg md:grid-cols-7">
+      <div className="mb-2 grid h-screen grid-cols-1 rounded-lg pb-2 shadow-lg heropattern-topography-blue-500 md:grid-cols-7">
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         {/*I Love To Fish*/}
@@ -107,7 +107,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/fishing_hxxsep.png"
               alt="fish on!"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -126,7 +127,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/compass_l0xzbk.png"
               alt="never get lost"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -143,7 +145,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/campfire_hw2lbp.png"
               alt="a lovely crackling campfire"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -160,7 +163,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/guitar_cembhd.png"
               alt="music to my ears"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -177,7 +181,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/map_hzg9v2.png"
               alt="a map over a map..."
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -200,7 +205,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896635/mountainTopCoding/tent_hdkwpn.png"
               alt="home away from home"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>
@@ -219,7 +225,8 @@ export default function Home() {
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/hikingBoots_quqrl9.png"
               alt="lace up those boots and hit the trail"
-              layout="fill"
+              width={500}
+              height={500}
               className="mx-auto"
             />
           </a>

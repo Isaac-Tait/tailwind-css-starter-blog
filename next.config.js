@@ -52,18 +52,14 @@ const securityHeaders = [
   },
 ]
 
-module.exports = {
+const imageConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'res.cloudinary.com',
-      },
-    ],
+    domains: ['res.cloudinary.com'],
   },
 }
 
 module.exports = withBundleAnalyzer({
+  ...imageConfig,
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   eslint: {
