@@ -4,15 +4,6 @@ import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 
-import campFire from '../lib/images/campfire.png'
-import tent from '../lib/images/tent.png'
-
-import compass from '../lib/images/compass.png'
-import fishing from '../lib/images/fishing.png'
-import guitar from '../lib/images/guitar.png'
-import hikingBoots from '../lib/images/hikingBoots.png'
-import map from '../lib/images/map.png'
-
 export default function Home() {
   return (
     <>
@@ -113,7 +104,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               I love to fish
             </div>
-            <Image src={fishing} alt="fish on!" className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/fishing_hxxsep.png"
+              alt="fish on!"
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -127,7 +123,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               VW Type Two
             </div>
-            <Image src={compass} alt="never get lost" className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/compass_l0xzbk.png"
+              alt="never get lost"
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -139,7 +140,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               GitHub
             </div>
-            <Image src={campFire} alt="a lovely crackling campfire" className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/campfire_hw2lbp.png"
+              alt="a lovely crackling campfire"
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -151,7 +157,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               Royal Ridges Retreat
             </div>
-            <Image src={guitar} alt="music to my ears" className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/guitar_cembhd.png"
+              alt="music to my ears"
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -163,7 +174,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               Gravel Cycling
             </div>
-            <Image src={map} alt="a map over a map..." className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/map_hzg9v2.png"
+              alt="a map over a map..."
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -181,7 +197,12 @@ export default function Home() {
             <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
               LinkedIn Profile
             </div>
-            <Image src={tent} alt="home away from home" className="mx-auto" />
+            <Image
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896635/mountainTopCoding/tent_hdkwpn.png"
+              alt="home away from home"
+              layout="fill"
+              className="mx-auto"
+            />
           </a>
         </div>
 
@@ -196,8 +217,9 @@ export default function Home() {
               My Blog
             </div>
             <Image
-              src={hikingBoots}
+              src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/hikingBoots_quqrl9.png"
               alt="lace up those boots and hit the trail"
+              layout="fill"
               className="mx-auto"
             />
           </a>
