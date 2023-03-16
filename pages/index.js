@@ -46,7 +46,7 @@ export default function Home() {
             <div className="mt-16 -mr-16 hidden h-20 w-20 rounded-2xl bg-blue-200 md:block"></div>
             <p className="z-0 items-start font-bold tracking-wide">
               The OG{' '}
-              <a
+              <Link
                 href="https://mountaintopcoding.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default function Home() {
                   &#127956;
                 </span>
                 );
-              </a>
+              </Link>
             </p>
             <div className="-mt-20 hidden h-24 w-24 rounded-full bg-blue-200 md:block"></div>
             <div className="mb-16 ml-16 hidden h-16 w-20 rounded-2xl bg-blue-200 md:block"></div>
@@ -67,13 +67,13 @@ export default function Home() {
             <div className="mt-20 hidden h-20 w-20 rounded-full bg-blue-200 md:block"></div>
             <p className="font-bold tracking-wide md:mt-40">
               My{' '}
-              <a
+              <Link
                 href="https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf"
                 rel="noopener noreferrer"
                 className="rounded-sm p-1 text-white hover:bg-blue-500 hover:text-white"
               >
                 resume
-              </a>
+              </Link>
             </p>
             <div className="mb-32 hidden h-16 w-20 rounded-2xl bg-blue-200 md:block"></div>
           </div>
@@ -82,28 +82,25 @@ export default function Home() {
             <div className="mx-auto mb-32 hidden h-40 w-40 rounded-full bg-blue-200 md:block"></div>
             <p className="mb-40 font-bold tracking-wide">
               A fun side project{' '}
-              <a
+              <Link
                 href="https://starshipfor.sale"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-sm p-1 text-white hover:bg-blue-500 hover:text-white"
               >
                 Starship For Sale
-              </a>
+              </Link>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="mb-2 grid h-screen grid-cols-1 rounded-lg pb-2 shadow-lg heropattern-topography-blue-500 md:grid-cols-7">
+      <div className="mb-2 grid h-screen grid-cols-1 rounded-lg pb-2 shadow-lg heropattern-topography-blue-500 md:grid-cols-6">
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         {/*I Love To Fish*/}
         <div className="relative my-auto ml-12 box-content w-12 md:ml-0 md:w-32">
-          <a href="https://iloveto.fish" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              I love to fish
-            </div>
+          <Link href="https://iloveto.fish" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/fishing_hxxsep.png"
               alt="fish on!"
@@ -111,19 +108,20 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              I love to fish
+            </p>
+          </Link>
         </div>
 
+        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*VW Site*/}
         <div className="relative my-auto ml-24 box-content w-12 md:ml-0.5 md:w-32">
-          <a href="https://vwtypetwo.com" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              VW Type Two
-            </div>
+          <Link href="https://vwtypetwo.com" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/compass_l0xzbk.png"
               alt="never get lost"
@@ -131,17 +129,17 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              VW Type Two
+            </p>
+          </Link>
         </div>
 
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*GitHub*/}
         <div className="relative my-auto ml-36 box-content w-12 md:ml-0 md:w-28">
-          <a href="https://github.com/Isaac-Tait" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              GitHub
-            </div>
+          <Link href="https://github.com/Isaac-Tait" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/campfire_hw2lbp.png"
               alt="a lovely crackling campfire"
@@ -149,17 +147,17 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              GitHub
+            </p>
+          </Link>
         </div>
 
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*Royal Ridges*/}
         <div className="relative my-auto ml-48 box-content w-12 md:ml-0 md:w-32">
-          <a href="https://royalridges.org" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              Royal Ridges Retreat
-            </div>
+          <Link href="https://royalridges.org" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/guitar_cembhd.png"
               alt="music to my ears"
@@ -167,17 +165,18 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              Royal Ridges Retreat
+            </p>
+          </Link>
         </div>
 
+        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*Gravel Cycling*/}
         <div className="relative my-auto ml-48 box-content w-12 md:ml-0 md:w-32">
-          <a href="https://macadamgrinding.com" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              Gravel Cycling
-            </div>
+          <Link href="https://macadamgrinding.com" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896398/mountainTopCoding/map_hzg9v2.png"
               alt="a map over a map..."
@@ -185,43 +184,43 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded px-1 text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              Gravel Cycling
+            </p>
+          </Link>
         </div>
 
-        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
-        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*Linkedin*/}
         <div className="relative my-auto ml-60 box-content w-12 md:ml-0 md:w-32">
-          <a
+          <Link
             href="https://www.linkedin.com/in/isaacmtait/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              LinkedIn Profile
-            </div>
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896635/mountainTopCoding/tent_hdkwpn.png"
               alt="home away from home"
               width={500}
               height={500}
-              className="mx-auto"
+              className="mx-auto h-auto max-w-full"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-1000 hover:bg-blue-400 hover:opacity-100">
+              LinkedIn Profile
+            </p>
+          </Link>
         </div>
-
+        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
+        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
+        <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
         <div className="box-content hidden h-12 w-12 p-4 md:block md:h-32 md:w-32"></div>
 
         {/*Blog*/}
         <div className="relative my-auto ml-72 box-content w-12 md:ml-0 md:w-32">
-          <a href="https://blog.mountaintopcoding.com" target="_blank" rel="noopener noreferrer">
-            <div className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
-              My Blog
-            </div>
+          <Link href="https://blog.mountaintopcoding.com" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://res.cloudinary.com/mountaintopcoding-127956/image/upload/v1678896397/mountainTopCoding/hikingBoots_quqrl9.png"
               alt="lace up those boots and hit the trail"
@@ -229,7 +228,10 @@ export default function Home() {
               height={500}
               className="mx-auto"
             />
-          </a>
+            <p className="absolute inset-0 flex items-center justify-center rounded text-center text-xl text-white opacity-0 duration-300 hover:bg-blue-400 hover:opacity-100">
+              My Blog
+            </p>
+          </Link>
         </div>
       </div>
     </>

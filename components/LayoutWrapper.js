@@ -1,6 +1,7 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
+import MobileLogo from '@/data/mobileLogo.svg'
 import Link from './Link'
 import SectionContainer from './SectionContainer'
 import Footer from './Footer'
@@ -12,12 +13,21 @@ const LayoutWrapper = ({ children }) => {
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
         <header className="flex items-center justify-between py-10">
-          <div>
+          {/* Desktop Logo */}
+          <div className="hidden md:block">
             <Link href="/" aria-label={siteMetadata.headerTitle}>
               <div className="flex items-center justify-between">
                 <div className="mr-3">
                   <Logo />
                 </div>
+              </div>
+            </Link>
+          </div>
+          {/* Mobile Logo */}
+          <div className="block md:hidden">
+            <Link href="/" aria-label={siteMetadata.headerTitle}>
+              <div className="mr-3">
+                <MobileLogo />
               </div>
             </Link>
           </div>
