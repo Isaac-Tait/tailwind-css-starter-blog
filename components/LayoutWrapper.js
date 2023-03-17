@@ -11,7 +11,7 @@ import ThemeSwitch from './ThemeSwitch'
 const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
-      <div className="flex h-screen flex-col justify-between">
+      <div className="flex flex-col justify-between">
         <header className="flex items-center justify-between py-10">
           {/* Desktop Logo */}
           <div className="hidden md:block">
@@ -47,8 +47,10 @@ const LayoutWrapper = ({ children }) => {
             <MobileNav />
           </div>
         </header>
-        <main className="mb-auto">{children}</main>
-        <Footer />
+        <main className="mb-auto grow">{children}</main>
+        <div className="fixed bottom-0 z-0 mx-auto w-full">
+          <Footer />
+        </div>
       </div>
     </SectionContainer>
   )
