@@ -10,47 +10,47 @@ import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
-      <div className="flex flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
-          {/* Desktop Logo */}
-          <div className="hidden md:block">
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo />
-                </div>
-              </div>
-            </Link>
-          </div>
-          {/* Mobile Logo */}
-          <div className="block md:hidden">
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
+    <div className="flex h-screen flex-col justify-between">
+      <header className="flex items-center justify-between py-10">
+        {/* Desktop Logo */}
+        <div className="hidden md:block">
+          <Link href="/" aria-label={siteMetadata.headerTitle}>
+            <div className="flex items-center justify-between">
               <div className="mr-3">
-                <MobileLogo />
+                <Logo />
               </div>
-            </Link>
-          </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
-              {headerNavLinks.map((link) => (
-                <Link
-                  key={link.title}
-                  href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
-                >
-                  {link.title}
-                </Link>
-              ))}
             </div>
-            <ThemeSwitch />
-            <MobileNav />
+          </Link>
+        </div>
+        {/* Mobile Logo */}
+        <div className="block md:hidden">
+          <Link href="/" aria-label={siteMetadata.headerTitle}>
+            <div className="mr-3">
+              <MobileLogo />
+            </div>
+          </Link>
+        </div>
+        <div className="flex items-center text-base leading-5">
+          <div className="hidden sm:block">
+            {headerNavLinks.map((link) => (
+              <Link
+                key={link.title}
+                href={link.href}
+                className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+              >
+                {link.title}
+              </Link>
+            ))}
           </div>
-        </header>
-        <main className="mb-auto">{children}</main>
+          <ThemeSwitch />
+          <MobileNav />
+        </div>
+      </header>
+      <main className="grow bg-slate-500">{children}</main>
+      <div className="bottom-0">
         <Footer />
       </div>
-    </SectionContainer>
+    </div>
   )
 }
 
