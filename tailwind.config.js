@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
+const heroPatterns = require('tailwindcss-hero-patterns/src/patterns')
 
 module.exports = {
   experimental: {
@@ -30,6 +31,12 @@ module.exports = {
       colors: {
         primary: colors.teal,
         gray: colors.neutral,
+        lime: {
+          700: '#B6D554',
+        },
+      },
+      heroPatterns: {
+        topography: heroPatterns.topography,
       },
       typography: (theme) => ({
         DEFAULT: {

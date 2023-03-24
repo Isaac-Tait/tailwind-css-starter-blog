@@ -3,7 +3,7 @@ import siteMetadata from '@/data/siteMetadata'
 
 export default function Home() {
   return (
-    <div className="h-full rounded-lg bg-blue-200 shadow-lg dark:bg-slate-600">
+    <div className="h-full rounded-lg shadow-lg heropattern-topography-lime-400 dark:bg-slate-600">
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       {/* 
       I want this to flex grow into the space created on line 50 of layoutWrapper.js 
@@ -18,7 +18,7 @@ export default function Home() {
           </span>
           ,&nbsp;and welcome to my portfolio. My name is Isaac Tait and I am an activist web
           developer who loves the outdoors.
-          <div className="-mt-48 -ml-8 h-64 w-64 rounded-full bg-blue-300 dark:bg-slate-400"></div>
+          <div className="-ml-50 -mt-56 h-64 w-64 rounded-full bg-lime-700 dark:bg-slate-400"></div>
         </p>
       </div>
     </div>
