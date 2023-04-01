@@ -9,7 +9,7 @@ export default function Footer() {
           <div>{`© 2019 - ${new Date().getFullYear()}`}</div>
           <div>{` - `}</div>
           <div className="hidden md:block">{` Built with TailwindCSS && NextJS `}</div>
-          <div>{` - `}</div>
+          <div className="hidden md:block">{` - `}</div>
           <a
             href="https://github.com/Isaac-Tait/tailwind-css-starter-blog"
             target="_blank"
