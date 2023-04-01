@@ -12,7 +12,7 @@ const Comments = ({ frontMatter }) => {
   const comment = siteMetadata?.comment
   if (!comment || Object.keys(comment).length === 0) return <></>
   return (
-    <div id="comment">
+    <div id="comment" className="flex">
       {siteMetadata.comment && siteMetadata.comment.provider === 'giscus' && <GiscusComponent />}
     </div>
   )
