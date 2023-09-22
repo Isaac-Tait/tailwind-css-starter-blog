@@ -64,7 +64,7 @@ const projectsData = [
     description:
       'Currently I am a freelance developer on Upwork but I am always interested in employment. Take a look at my resume and drop me a line and we can chat about how I can help your site grow.',
     imgSrc: '/static/images/desert.jpeg',
-    href: 'https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume_Portfolio.pdf',
+    href: 'https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume.pdf',
   },
 ]
 
