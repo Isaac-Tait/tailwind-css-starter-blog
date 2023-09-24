@@ -66,6 +66,20 @@ const projectsData = [
     imgSrc: '/static/images/desert.jpeg',
     href: 'https://mountaintop-coding.s3.us-west-1.amazonaws.com/Isaac_Tait_Resume.pdf',
   },
+  {
+    title: 'Paintball',
+    description:
+      'I had a blast building (and maintaining) Royal Ridges website. So, I was more than happy to build them another site for their new business venture...',
+    imgSrc: '/static/images/nightSky.jpg',
+    href: 'https://royalridgespaintball.com/',
+  },
+  {
+    title: 'Sticky Fingers',
+    description:
+      'A long time coming - I finally am breaking free of thirty years of Christian brainwashing and making up my own mind about life, God, theology, and spirituality.',
+    imgSrc: '/static/images/beach.jpg',
+    href: 'https://sticky-fingers.vercel.app/',
+  },
 ]
 
 export default projectsData
