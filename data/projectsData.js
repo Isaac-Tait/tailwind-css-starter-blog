@@ -74,11 +74,11 @@ const projectsData = [
     href: 'https://royalridgespaintball.com/',
   },
   {
-    title: 'Sticky Fingers',
+    title: 'Exploring and Pondering',
     description:
-      'A long time coming - I finally am breaking free of thirty years of Christian brainwashing and making up my own mind about life, God, theology, and spirituality.',
+      'A long time coming - I finally am breaking free of thirty years of evangelical fundamentalist indoctrination and making up my own mind about life and spirituality.',
     imgSrc: '/static/images/beach.jpg',
-    href: 'https://sticky-fingers.vercel.app/',
+    href: 'https://eandp.cc',
   },
 ]
 
