@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: '/static/images/logo.svg',
   email: 'isaac@mountaintopcoding.com',
   github: 'https://github.com/Isaac-Tait',
-  twitter: 'https://twitter.com/Isaac_Tait_83',
+  twitter: 'https://www.threads.net/@exploring_and_pondering',
   facebook: 'https://fallfishtenkara.com',
   youtube: 'https://www.youtube.com/channel/UC2UGKXE5iu9mnbrzKejkNGg',
   linkedin: 'https://www.linkedin.com/in/isaacmtait/',
